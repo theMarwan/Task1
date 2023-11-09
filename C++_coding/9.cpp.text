@@ -1,0 +1,54 @@
+#implement a c++ program that simulATE a simple atm machine allowing user to check their balance withdraw money and deposit funds:?
+
+
+
+
+
+
+
+#include <iostream>
+#include <iomanip>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int main()
+{
+    int balance = 1000;
+    int option;
+    cout << " welcome to the machine ";
+    cout << " 1. check balance" << endl;
+    cout << " 2. withdraw money" << endl;
+    cout << " 3. deposit money" << endl;
+    cout << " 4. exit" << endl;
+    switch(option){
+case 1:
+    cout << balance << endl;
+    break;
+case 2:
+    cout << "enter much of money you want to with draw: " << endl;
+    cin >> option;
+    if(option>balance){
+            cout << "insufficient funds" << endl;
+    break;
+    }
+    balance-=option;
+    cout << option << balance << endl;
+    break;
+case 3:
+    cout << "how much money would you like to deposit ";
+    cin >> option;
+    balance+=option;
+    cout << option << balance << endl;
+    break;
+case 4:
+    cout << " thank you for using" << endl;
+    exit(0);
+    cout << "invalid option" << endl;
+    break;
+    }
+
+    return 0;
+}
+
+

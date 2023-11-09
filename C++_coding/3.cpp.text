@@ -1,0 +1,43 @@
+//implement a c++ program to reverse an array in-place (without using additional data sturcture)?: 
+
+
+
+
+
+# without using other array
+
+#include <iostream>
+using namespace std;
+int main(){
+  int arr1[]={1,2,3,4,5};
+  int temp;
+  for(int i=0; i<5; i++){
+    swap(arr1[i], arr1[4-1]);
+  }
+
+  for(int M=0; M<5; M++)
+    cout << "arr[" << M << "] = " << arr1[M] << endl;
+
+    return 0;
+}
+
+___________________________________________________________________
+
+
+# with using other array
+
+#include <iostream>
+using namespace std;
+int main(){
+  int arr1[]={1,2,3,4,5};
+  int arr2[5];
+  for(int i=0; i<5; i++)
+    arr2[i]=arr1[4-i];
+
+
+
+  for(int M=0; M<5; M++)
+    cout << "arr[" << M << "] = " << arr1[M] << endl;
+
+    return 0;
+}

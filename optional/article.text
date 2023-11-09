@@ -1,0 +1,32 @@
+The history of version control can be traced back to the 1960s, 
+when the engineering process was the first to use version control by identifying the assemblies and components in a design and representing them in a hierarchical map ¹. 
+The first deliberate revision control system was Source Code Control System, which was published on December 4, 1975 ³. The predecessor of modern version control tools was IEBUPDTE,
+which was used with IBM's OS/360. It was developed in the early 1960s and primarily used punched cards to store data ¹. 
+
+The original version control software was mainframe-based, and individual programmers accessed the system via a terminal. 
+UNIX systems were the first to introduce server-based, or centralized version control systems that relied on a single, shared repository, 
+and these eventually became available on MS-DOS and Windows ⁵. Distributed version control made branching and merging easier ¹. Git, 
+a distributed version control system, was born out of the Linux Kernel Community’s frustrations with available VCSs ¹. Git was designed to be fast, efficient, and secure,
+ and to be distributed, meaning that every developer has a copy of the repository on their local machine ¹. 
+
+Git uses a directed acyclic graph (DAG) to represent the history of changes to the repository ¹. The DAG is made up of commits,
+which are snapshots of the repository at a particular point in time ¹. Each commit has a unique identifier, which is a hash of the contents of the commit ¹. 
+Commits are organized into branches, which are pointers to a particular commit in the DAG ¹. Git has several advantages over other VCSs. It is fast, efficient,
+and secure ¹. It is also distributed, which means that every developer has a copy of the repository on their local machine ¹. 
+This makes it easy to work offline and collaborate with other developers ¹. Git also has a powerful branching and merging system,
+ which makes it easy to work on multiple features or bug fixes at the same time ¹. 
+
+In conclusion, version control systems are software tools that help developers manage changes to source code over time. 
+Git is a distributed version control system that was born out of the Linux Kernel Community’s frustrations with available VCSs. 
+Git was designed to be fast, efficient, and secure, and to be distributed, meaning that every developer has a copy of the repository on their local machine. 
+Git uses a directed acyclic graph (DAG) to represent the history of changes to the repository. Git has several advantages over other VCSs,  
+including its speed, 
+efficiency, security, and powerful branching and merging system ¹³⁵.
+
+_________________________________________________________________________________________________________________________________
+git arcgtechture:  
+
+
+Many VCS’s use a two-tier architecture i.e a repository and a working 
+Git uses three-tier architecture i.e a working directory, staging area and local repository. 
+The three stages of git can store different(or the same) states of the same code in each stage

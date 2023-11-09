@@ -1,0 +1,21 @@
+#create a c++ program to calclate all even number between range (1:100)?:
+
+
+
+
+
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int sum = 0;
+    for (int i=2; i<=100; i+=2){
+            sum+=i;
+        }
+    cout << sum;
+    return 0;
+}
